@@ -54,15 +54,15 @@ namespace GankOff
                 }
             }
         }
-        public override void Initialize()
+        public override void OnEnable()
         {
             Logging.Write("GankOff - Loaded Version " + Version);
         }
 
         private static LocalPlayer intMe { get { return StyxWoW.Me; } }
         public override string Name { get { return "GankOff"; } }
-        public override string Author { get { return "Giwin fixed by BadWolff AGAIN"; } }
-        public override Version Version { get { return new Version(1, 3); } }
+        public override string Author { get { return "Giwin fixed by BadWolff AGAIN and Carz Again"; } }
+        public override Version Version { get { return new Version(0,0,2); } }
         public override bool WantButton { get { return false; } }
     }
 }
